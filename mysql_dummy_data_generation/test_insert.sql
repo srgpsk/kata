@@ -16,7 +16,7 @@
  And/Or with nice table output:
  tput setaf 2; docker exec -i mariadb mysql -vvv  < test_insert.sql | grep -iA 5 -e 'call create_user_batch' | \
  grep -oE -e 'create_user_batch[a-z0-9_]+' -e '[0-9]+ rows' -e 'affected (.+?)' | \
- sed -e 's/create_user_batch_\|rows\|affected //;s/^0\.00[0-9] sec/skipped/' | tr -d '()' | paste -d',' - - - | \
+ sed -e 's/create_user_batch_\|rows\|affected //;s/(0\.00[0-9] sec/skipped/' | tr -d '()' | paste -d',' - - - | \
  column -ts, -o$'\t' -N Procedure,Rows,Time; tput sgr0;
 */
 
