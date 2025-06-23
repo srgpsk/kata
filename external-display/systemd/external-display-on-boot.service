@@ -1,0 +1,9 @@
+[Unit]
+Description=Scale UI on external display connection
+
+[Service]
+Type=oneshot
+ExecStart=/home/dev/.local/bin/on-external-display-connection.sh
+
+[Install]
+WantedBy=graphical-session.target
