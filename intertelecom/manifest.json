@@ -1,0 +1,39 @@
+{
+
+    "manifest_version": 2,
+    "version": "0.1",
+    "name": "Intertelecom Traffic Checker",
+    "description": "Check available paket traffic for Ukraine 3g provider Intertelecom", 
+    "icons": {
+        "48": "icon48.png"
+
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "icon19.png",
+            "38": "icon38.png"
+            }, 
+        "default_title": "Traffic", 
+        "default_popup": "main.html"
+    }, 
+    
+    "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+    },
+    
+     "options_page": "options.html",
+    
+    "permissions": [
+    "alarms",
+    "storage",
+    "cookies",
+   // "webRequest", // wait on https://developer.chrome.com/extensions/declarativeWebRequest
+           "*://*.intertelecom.ua/",
+           "http://192.168.1.1/"
+	]
+
+    //"update_url": "http://clients2.google.com/service/update2/crx",
+    // "content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+}
+

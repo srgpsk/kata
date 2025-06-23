@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+   <!-- <link href='chrome://resources/css/widgets.css' rel='stylesheet' type='text/css' />-->
+   <style>
+	body {background-color:lightblue;}
+   #wrapper {border: 1px solid #C3C3C3;margin:30px auto;width:50%;background-color:white;}
+   #header {border-bottom: 1px solid #C3C3C3;min-height:65px;}
+   #inner {padding:50px;}
+   </style>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      Options
+    </title><!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+  </head>
+  <body>
+<div id="wrapper">
+	<div id="header"></div>
+
+       <div id="login-form" style="padding: 15px 0px 0px;">
+
+                                  <label for="login" id="login_label">
+                                          <strong>Абонентский номер:</strong>
+                                          <span style="right:117px;top:6px;position:absolute">+380</span>
+                                          <input style="width: 110px; right: 0px; cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=);" type="text" id="login" name="login" size="15" maxlength="10" value="" placeholder="Login">
+                                  </label>
+
+
+                                  <label for="password" id="password_label">
+                                          <strong>Пароль:</strong>
+                                          <input style="width: 110px; right: 0px; cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=);" type="password" id="password" name="password" size="15" maxlength="16" value="" placeholder="Password">
+                                  </label>
+                      
+                                  <div id="status"></div>
+                                   <button id="save">Save</button> 
+              </div>
+
+                    
+
+ </div>  
+ <script src="options.js"></script>
+  </body>
+</html>
